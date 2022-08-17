@@ -1,0 +1,31 @@
+//create by thitiwat khonthong 64020574
+public class BankAccount {
+    public static void main(String args[]){
+        System.out.println();
+        Bank b1 = new Bank("Thitiwat");
+        System.out.println("b1.fname=" + b1.fname);
+        Bank b2 = new Bank("khonthong");
+        System.out.println("b2.lname=" + b2.lname);
+        Bank b3 = new Bank("aomsin");
+        System.out.println("b3.Branch=" + b3.Branch);
+        Bank b4 = new Bank(9999);
+        System.out.println("b4.Number=" + b4.BankNumber);
+        Bank b5 = new Bank(500);
+        System.out.println("b5.Amount=" + b5.Amount);
+    }
+class Bank{
+    String fname;
+    String lname;
+    String Branch;
+    int Amount;
+    int BankNumber;
+    Bank(String fname){
+        fname = "thitiwat";
+        lname = "khonthong";
+        Branch = "aomsin";
+        BankNumber = 999999;
+        Amount = 500;
+    }
+    
+}
+}
